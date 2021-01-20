@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Result Page</h1>
+<br>
+<a href="{% url 'home' %}">Start Again</a>
+<br><br>
+{% for key,val in dict %}
+{{key}} {{ ':' }} {{val}}
+<br>
+{% endfor %}
+
+</body>
+</html>
